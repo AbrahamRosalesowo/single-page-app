@@ -1,0 +1,7 @@
+Arranca el proyecto
+
+npx webpack-dev-server
+
+
+Lo convierte en producción
+npx webpack --mode production
