@@ -1,6 +1,6 @@
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 
-//covierte código de desarrollador a código de producción
+//covierte código de desarrollo a código de producción
 module.exports = {
     //Tarea de entrada
     entry: './src/main.js',
