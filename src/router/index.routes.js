@@ -14,8 +14,8 @@ const router = async (route) =>{
 
         case '#/posts':
             return content.appendChild(await pages.posts());
-        case '#/products':
-            return console.log('404');
+        case '#/users':
+            return content.appendChild(await pages.users());
         default:
             return content.appendChild(pages.notFound());
     }
