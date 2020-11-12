@@ -9,3 +9,5 @@ Hey everyone, this is a single page app made by pure Javascript and webpack
 
 ### Convert to production mode
 `npx webpack --mode production`
+
+[production mode](https://spa-appu.herokuapp.com/)
