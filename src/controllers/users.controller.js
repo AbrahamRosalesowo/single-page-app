@@ -10,19 +10,21 @@ export default async () => {
     divElement.innerHTML = view;
 
     const usersElement = divElement.querySelector('#users')
-    let totalUser = divElement.querySelector('#total') //si se seleccionan id's es importante que se pongan las almohadillas
+    let totalUser = divElement.querySelector('#total') 
 
     const users = await getUsers();
     totalUser.innerHTML = users.length;
 
     users.forEach(user => {
         usersElement.innerHTML += `
-        <li class="list-group-item border-primary bg-dark text-white">
-            <h5>${user.name}</h5>
+        <div class="card bg-primary mb-3 text-center container" style="max-width: 20rem; color: #fff;">
+            <h5 class="card-header">${user.name}</h5>
+            <div>
             <p>${user.username}</p>
             <p>${user.email}</p>
             <p>${user.website}</p>
-        </li>
+            </div>
+        </div>
         `
     });
 

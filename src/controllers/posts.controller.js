@@ -18,10 +18,12 @@ export default async () => {
 
     posts.forEach(post => {
         postsElement.innerHTML += `
-        <li class="list-group-item border-primary bg-dark text-white">
-            <h5>${post.title}</h5>
-            <p>${post.body}</p>
-        </li>
+        <div class="container">
+        <div class="card border-primary " style="max-width: auto; color: #303030; margin: 20px;">
+            <h5 class=" card-header">${post.title}</h5>
+            <p class="m-2 card-body">${post.body}</p>
+        </div>
+        </div>
         `
     });
 

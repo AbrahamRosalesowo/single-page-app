@@ -6,7 +6,7 @@ module.exports = {
     entry: './src/main.js',
     //tarea de salida
     output: {
-        path: __dirname + '/dist',
+        path: __dirname + '/server/dist',
         filename: 'bundle.js'
     },
     module: {

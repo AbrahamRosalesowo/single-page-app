@@ -1,4 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
+//import 'bootstrap/dist/css/bootstrap.min.css'
+import './views/bootstrap.min.css'
 import './main.scss'
 
 //enrutamiento de las pestañas
